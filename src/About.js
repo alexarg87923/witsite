@@ -1,12 +1,15 @@
+import { Helmet } from 'react-helmet';
 
 function About() {
   
   return (
 
     <div>
-        <h1>
-            Test
-        </h1>
+      
+      <Helmet>
+        <title>About</title>
+      </Helmet>
+
     </div>
     
   );

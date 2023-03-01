@@ -15,10 +15,15 @@
     {
       "src": "home.png",
       "type": "image/png",
-      "sizes": "578x174"
+      "sizes": "290x97"
+    },
+    {
+      "src": "women-tech.jpg",
+      "type": "image/jpg",
+      "sizes": "800x300"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

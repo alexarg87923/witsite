@@ -5,9 +5,10 @@ import Footer from '../../components/Footer/Footer';
 
 function Join() {
   const selected = {
-    about: <>About us</>,
-    events: <>Upcoming Events</>,
-    join: <u>Join WiT MDC</u>
+    about: 'About us',
+    events: 'Upcoming Events',
+    join: <u>Join WiT MDC</u>,
+    contact: 'Contact Us'
 };
   return (
     

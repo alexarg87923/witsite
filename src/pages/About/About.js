@@ -6,8 +6,9 @@ import Footer from '../../components/Footer/Footer';
 function About() {
   const selected = {
     about: <u>About us</u>,
-    events: <>Upcoming Events</>,
-    join: <>Join WiT MDC</>
+    events: 'Upcoming Events',
+    join: 'Join WiT MDC',
+    contact: 'Contact Us'
 };
 
   return (

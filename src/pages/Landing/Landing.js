@@ -6,9 +6,10 @@ import LandingBody from '../../components/Landing/LandingBody';
 
 function Landing() {
   const selected = {
-    about: <>About us</>,
-    events: <>Upcoming Events</>,
-    join: <>Join WiT MDC</>
+    about: 'About us',
+    events: 'Upcoming Events',
+    join: 'Join WiT MDC',
+    contact: 'Contact Us'
 };
   return (
     

@@ -43,7 +43,7 @@ function Nav(prop) {
         
         <div className='me-5 pe-5'>
           <strong> <a href="/contact" id="contact" className='me-5 navLinks'>
-            Contact us
+          {links.contact}
           </a> </strong>
         </div>
         

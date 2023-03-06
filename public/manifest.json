@@ -21,6 +21,11 @@
       "src": "women-tech.jpg",
       "type": "image/jpg",
       "sizes": "800x300"
+    },
+    {
+      "src": "witWhite.png",
+      "type": "image/png",
+      "sizes": "500x500"
     }
   ],
   "start_url": "/",

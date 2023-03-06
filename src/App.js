@@ -12,10 +12,10 @@ function App() {
       <Router>
       <Routes>
           <Route exact path='/' element={<Landing />} />
-          <Route path='/about' element={<About/>} />
-          <Route path='/events' element={<Events/>} />
-          <Route path='/join' element={<Join/>} />
-          <Route path='/contact' element={<Contact/>} />
+          <Route exact path='/about' element={<About/>} />
+          <Route exact path='/events' element={<Events/>} />
+          <Route exact path='/join' element={<Join/>} />
+          <Route exact path='/contact' element={<Contact/>} />
       </Routes>
       </Router>
   );

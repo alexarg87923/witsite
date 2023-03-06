@@ -33,15 +33,15 @@ function LandingBody() {
             <div className='benefits d-flex py-5 text-center justify-content-center'>
 
                 <div>
-                    <p className='text-white banner'>Access to <strong>mentorship</strong> opportunities that can help you develop your skills and career path</p>
+                    <p className='text-white landingBanner'>Access to <strong>mentorship</strong> opportunities that can help you develop your skills and career path</p>
                 </div>
 
                 <div>
-                    <p className='text-white banner' >Expand your tech network by joining our community of <strong>80+ members </strong>across all campuses</p>
+                    <p className='text-white landingBanner' >Expand your tech network by joining our community of <strong>80+ members </strong>across all campuses</p>
                 </div>
 
                 <div>
-                    <p className='text-white banner'>Support in your career goals through <strong>events</strong>, <strong>workshops</strong>, and <strong>resources</strong> offered by the club</p>
+                    <p className='text-white landingBanner'>Support in your career goals through <strong>events</strong>, <strong>workshops</strong>, and <strong>resources</strong> offered by the club</p>
                 </div>
 
             </div>

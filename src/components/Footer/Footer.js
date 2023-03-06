@@ -12,15 +12,15 @@ function Footer() {
             </div>
 
             <div className="ms-5 ps-5">
-                <a href="/" className='footerLinks'><u>WiT Zoom Room</u></a>
+                <a href="https://www.mdc.edu/entec/grants/womenrise.aspx" className='footerLinks'><u>WiT Zoom Room</u></a>
             </div>
 
             <div className="ms-5 ps-5">
-                <a href="/" className='footerLinks'><u>WiT Sharknet</u></a>
+                <a href="https://sharknet.mdc.edu/organization/witmdc" className='footerLinks'><u>WiT Sharknet</u></a>
             </div>
 
             <div className="ms-5 ps-5">
-                <a href="/" className='footerLinks'><u>Women RISE MDC</u></a>
+                <a href="https://www.mdc.edu/entec/grants/womenrise.aspx" className='footerLinks'><u>Women RISE MDC</u></a>
             </div>
         </div>
     </footer>

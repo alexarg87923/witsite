@@ -1,25 +1,22 @@
 import { Helmet } from 'react-helmet';
-import AboutBody from '../../components/About/AboutBody';
+
 import Nav from '../../components/Nav/Nav';
 import Footer from '../../components/Footer/Footer';
 
-function About() {
+function Events() {
   const selected = {
-    about: <u>About us</u>,
-    events: <>Upcoming Events</>,
+    about: <>About us</>,
+    events: <u>Upcoming Events</u>,
     join: <>Join WiT MDC</>
 };
-
   return (
-
+    
     <div>
-      
       <Helmet>
-        <title>About</title>
+        <title>Events</title>
       </Helmet>
 
-      <Nav selected={selected} />
-      <AboutBody />
+      <Nav selected ={selected}/>
       <Footer />
     </div>
     
@@ -28,4 +25,4 @@ function About() {
 
 
 
-export default About;
+export default Events;

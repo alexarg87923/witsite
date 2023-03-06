@@ -30,8 +30,15 @@ a:active {
 .navLinks {
     font-style: bold;
     color:rgb(180, 2, 48);
+    font-size: 25px;
 }
 
 .navLinks:hover {
     color:pink;
+    font-size: 25px;
 }
+.container {
+    display: flex;
+    justify-content: space-between; /* center horizontally */
+    align-items: center; /* center vertically */
+  }

@@ -1,20 +1,23 @@
 import { Helmet } from 'react-helmet';
 
-import './Landing.css';
 import Nav from '../../components/Nav/Nav';
 import Footer from '../../components/Footer/Footer';
 import LandingBody from '../../components/Landing/LandingBody';
 
 function Landing() {
-  
+  const selected = {
+    about: <>About us</>,
+    events: <>Upcoming Events</>,
+    join: <>Join WiT MDC</>
+};
   return (
     
-    <div className="App">
+    <div>
       <Helmet>
         <title>Home</title>
       </Helmet>
 
-      <Nav />
+      <Nav selected ={selected}/>
       <LandingBody />
       <Footer />
     </div>

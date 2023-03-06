@@ -1,7 +1,7 @@
 import './Nav.css'
 
-function Nav() {
-  
+function Nav(prop) {
+    const links = prop.selected;
   return (
 
     <nav>
@@ -16,29 +16,31 @@ function Nav() {
         <div className='d-flex align-items-center mx-auto'>
           <div>
             <strong>
-              <a href="/about" className='ms-5 me-5 navLinks'>
-                About us
+              <a id="about" href="/about" className='mx-5 px-5 navLinks'>
+                {links.about}
+              </a>
+            </strong>
+          </div>
+          
+
+          <div>
+            <strong>
+              <a id="events" href="/events" className='mx-5 px-5 navLinks'>
+                {links.events}
               </a>
             </strong>
           </div>
 
           <div>
             <strong>
-              <a href="/events" className='ms-5 me-5 navLinks'>
-                Upcoming Events
+              <a id="join" href="/join" className='mx-5 px-5 navLinks'>
+              {links.join}
               </a>
             </strong>
           </div>
 
-          <div>
-            <strong>
-              <a href="https://sharknet.mdc.edu/organization/witmdc" className='ms-5 me-5 navLinks'>
-                Join WiT MDC
-              </a>
-            </strong>
-          </div>
         </div>
-
+        
         <div className='me-5 pe-5'>
           <strong> <a href="/contact" id="contact" className='me-5 navLinks'>
             Contact us

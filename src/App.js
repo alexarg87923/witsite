@@ -1,5 +1,5 @@
-import About from './About';
-import Landing from './Landing';
+import About from './pages/About/About';
+import Landing from './pages/Landing/Landing';
 
 import { BrowserRouter as Router, Routes, Route}
     from 'react-router-dom';

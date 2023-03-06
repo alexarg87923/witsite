@@ -1,0 +1,37 @@
+#contact {
+  
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(180, 2, 48);
+  border-radius: 15px;
+  padding: 10px;
+
+}
+#contact:hover{
+    border-color: pink;
+} 
+
+a:link { 
+    text-decoration: none;
+}
+a:visited { 
+    color: none;
+}
+a:visited { 
+    text-decoration: none;
+}
+a:hover { 
+    text-decoration: none;
+}
+a:active { 
+    text-decoration: none;
+}
+
+.navLinks {
+    font-style: bold;
+    color:rgb(180, 2, 48);
+}
+
+.navLinks:hover {
+    color:pink;
+}

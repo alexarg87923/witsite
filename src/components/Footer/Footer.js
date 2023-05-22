@@ -5,22 +5,17 @@ function Footer() {
   
   return (
 
-    <footer className='mb-5 mt-auto'>
-        <div className="d-flex mt-5">
-            <div className="ms-5 footerTitle">
-                <p>QUICK LINKS</p>
-            </div>
-
-            <div className="ms-5 ps-5">
-                <a href="https://www.mdc.edu/entec/grants/womenrise.aspx" className='footerLinks'><u>WiT Zoom Room</u></a>
-            </div>
-
-            <div className="ms-5 ps-5">
-                <a href="https://sharknet.mdc.edu/organization/witmdc" className='footerLinks'><u>WiT Sharknet</u></a>
-            </div>
-
-            <div className="ms-5 ps-5">
-                <a href="https://www.mdc.edu/entec/grants/womenrise.aspx" className='footerLinks'><u>Women RISE MDC</u></a>
+    <footer className="bg-dark py-4 mt-auto">
+        <div className="container px-5">
+            <div className="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div className="col-auto"><div className="small m-0 text-white">Copyright &copy; Your Website 2022</div></div>
+                <div className="col-auto">
+                    <a className="link-light small" href="#!">Privacy</a>
+                    <span className="text-white mx-1">&middot;</span>
+                    <a className="link-light small" href="#!">Terms</a>
+                    <span className="text-white mx-1">&middot;</span>
+                    <a className="link-light small" href="#!">Contact</a>
+                </div>
             </div>
         </div>
     </footer>

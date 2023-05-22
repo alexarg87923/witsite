@@ -1,15 +1,9 @@
 import { Helmet } from 'react-helmet';
 
-import Nav from '../../components/Nav/Nav';
+import NavBar from '../../components/Nav/NavBar';
 import Footer from '../../components/Footer/Footer';
 import EventBody from '../../components/Events/EventBody';
 function Events() {
-  const selected = {
-    about: 'About us',
-    events: <u>Upcoming Events</u>,
-    join: 'Join WiT MDC',
-    contact: 'Contact Us'
-};
   return (
     
     <div>
@@ -17,9 +11,9 @@ function Events() {
         <title>Events</title>
       </Helmet>
 
-      <Nav selected ={selected}/>
-      <EventBody />
-      <Footer />
+    <NavBar />
+    <EventBody />
+    <Footer />
     </div>
     
   );

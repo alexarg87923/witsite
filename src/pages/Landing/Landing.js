@@ -1,16 +1,11 @@
 import { Helmet } from 'react-helmet';
 
-import Nav from '../../components/Nav/Nav';
+import NavBar from '../../components/Nav/NavBar';
 import Footer from '../../components/Footer/Footer';
 import LandingBody from '../../components/Landing/LandingBody';
 
 function Landing() {
-  const selected = {
-    about: 'About us',
-    events: 'Upcoming Events',
-    join: 'Join WiT MDC',
-    contact: 'Contact Us'
-};
+
   return (
     
     <div>
@@ -18,8 +13,10 @@ function Landing() {
         <title>Home</title>
       </Helmet>
 
-      <Nav selected ={selected}/>
+      <NavBar />
+
       <LandingBody />
+
       <Footer />
     </div>
     

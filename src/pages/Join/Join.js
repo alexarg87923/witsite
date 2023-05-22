@@ -1,15 +1,9 @@
 import { Helmet } from 'react-helmet';
 
-import Nav from '../../components/Nav/Nav';
+import NavBar from '../../components/Nav/NavBar';
 import Footer from '../../components/Footer/Footer';
 
 function Join() {
-  const selected = {
-    about: 'About us',
-    events: 'Upcoming Events',
-    join: <u>Join WiT MDC</u>,
-    contact: 'Contact Us'
-};
   return (
     
     <div>
@@ -17,7 +11,8 @@ function Join() {
         <title>Join</title>
       </Helmet>
 
-      <Nav selected ={selected}/>
+      <NavBar />
+
       <Footer />
     </div>
     

@@ -6,8 +6,8 @@ function LandingBody() {
   return (
     <div>
         <div className="my-5 pt-5 container-fluid">
-            <div class="row">
-                <div className="col-lg imageDiv">
+            <div className="row">
+                <div className="imageDiv">
 
                 <div className='shadow'></div>
 
@@ -15,7 +15,7 @@ function LandingBody() {
 
                 </div>
 
-                <div className='ms-5 me-5 mt-5 col-lg ps-5'>
+                <div className='ms-5 me-5 mt-5 container ps-5'>
                     <div className='mb-5'>
                         <p className="colorBodyText bodyTitle"> <strong>Women in Tech at Miami-Dade College</strong> </p>
                     </div>

@@ -1,15 +1,10 @@
 import { Helmet } from 'react-helmet';
 
-import Nav from '../../components/Nav/Nav';
+import NavBar from '../../components/Nav/NavBar';
 import Footer from '../../components/Footer/Footer';
 
 function Contact() {
-  const selected = {
-    about: 'About us',
-    events: 'Upcoming Events',
-    join: 'Join WiT MDC',
-    contact: <u>Contact Us</u>
-};
+
   return (
     
     <div>
@@ -17,7 +12,8 @@ function Contact() {
         <title>Contact</title>
       </Helmet>
 
-      <Nav selected ={selected}/>
+      <NavBar />
+
       <Footer />
     </div>
     

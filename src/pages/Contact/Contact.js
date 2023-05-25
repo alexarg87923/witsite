@@ -7,14 +7,14 @@ import ContactBody from '../../components/Contact/ContactBody';
 
 function Contact() {
   return (
-    <div>
+    <>
       <Helmet>
         <title>Contact</title>
       </Helmet>
       <NavBar />
       <ContactBody />
       <Footer />
-    </div>
+    </>
   );
 }
 

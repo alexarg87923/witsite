@@ -7,7 +7,7 @@ import './NavBar.css';
 
 function NavBar() {
   return (
-    <Navbar className="ms-5" expand="lg">
+    <Navbar className="ps-5 border-bottom border-light" expand="lg">
       <Container fluid>
         <Navbar.Brand href="/">
           <img

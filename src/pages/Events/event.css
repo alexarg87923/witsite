@@ -1,0 +1,20 @@
+.fc-daygrid-day-number {
+    color: black;
+    text-decoration: none;
+  }
+
+  .fc-daygrid-day-number:hover {
+    color: pink;  
+    text-decoration: none;
+  }
+
+  .fc-toolbar-title {
+    color: pink;
+  }
+  .fc-col-header-cell-cushion {
+    color: white;
+    text-decoration: none;
+  }
+  th {
+    background-color:black;
+  }

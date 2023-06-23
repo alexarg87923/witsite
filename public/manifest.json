@@ -1,33 +1,6 @@
 {
   "short_name": "React App",
   "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "192x192 64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "home.png",
-      "type": "image/png",
-      "sizes": "290x97"
-    },
-    {
-      "src": "women-tech.jpg",
-      "type": "image/jpg",
-      "sizes": "800x300"
-    },
-    {
-      "src": "witWhite.png",
-      "type": "image/png",
-      "sizes": "500x500"
-    }
-  ],
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#000000",

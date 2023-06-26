@@ -1,49 +1,17 @@
 {
-  "name": "wit-website",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@fullcalendar/core": "^6.1.7",
-    "@fullcalendar/daygrid": "^6.1.7",
-    "@fullcalendar/react": "^6.1.7",
-    "@popperjs/core": "^2.11.7",
-    "bootstrap": "^5.2.3",
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.7.4",
-    "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
-    "react-router-dom": "^6.11.2",
-    "react-scripts": "5.0.1",
-    "styled-components": "^5.3.10"
-  },
+  "name": "witsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "install:back-end": "cd back-end/ && npm install",
+    "install:front-end": "cd front-end/ && npm install",
+    "postinstall": "npm run install:back-end && npm run install:front-end",
+    "start": "concurrently -n \"Front-end,Back-end\" -c \"cyan,green\" \"npm start --prefix front-end\" \"npm start --prefix back-end\""
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "eslint": "^8.41.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.32.2",
-    "prettier": "^2.8.8"
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.0"
   }
 }

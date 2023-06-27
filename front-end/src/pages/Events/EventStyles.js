@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   .fc-daygrid-day-number {
-    color: black;
+    color: red;
     text-decoration: none;
   }
 
@@ -17,9 +17,6 @@ export const Wrapper = styled.div`
   .fc-col-header-cell-cushion {
     color: white;
     text-decoration: none;
-  }
-  th {
-    background-color: black;
   }
   .fc-today-button {
     background-color: red !important;
@@ -47,13 +44,7 @@ export const Wrapper = styled.div`
   .fc-col-header-cell {
     background-color: pink !important;
   }
-  .fc-daygrid-event-dot {
-    color: black;
-  }
-  .fc-event-time {
-    color: black;
-  }
-  .fc-event-title {
-    color: black;
+  .evnts:hover {
+    color: rgb(251, 149, 200) !important;
   }
 `;

@@ -23,13 +23,13 @@ function Footer() {
 
         <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
           <li className="ms-3">
-            <a className="link-dark text-body-secondary" href="#">
-              <i className="bi-discord"></i>
+            <a className="link-dark text-body-secondary" href="https://discord.gg/e3Ur3esxtM">
+              <i className="bi-discord logo"></i>
             </a>
           </li>
           <li className="ms-3">
-            <a className="link-dark text-body-secondary mx-5" href="#">
-              <i className="bi-instagram"></i>
+            <a className="link-dark text-body-secondary mx-5" href="https://www.instagram.com/witmdc/">
+              <i className="bi-instagram logo"></i>
             </a>
           </li>
         </ul>

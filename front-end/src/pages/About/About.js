@@ -10,7 +10,7 @@ function About() {
       </Helmet>
 
       <Wrapper>
-        <section className="page-section" id="about">
+        <section className="page-section mb-5 pb-5" id="about">
           <div className="container">
             <div className="text-center">
               <div className="container section-title" data-aos="fade-up">

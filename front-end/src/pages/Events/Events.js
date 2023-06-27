@@ -91,8 +91,7 @@ function Events() {
       </Helmet>
       <EventBody />
       <div
-        className="mx-auto mt-5 mb-5"
-        style={{ width: '60%', height: '60%' }}
+        className="mx-auto mt-5 mb-5 calendar"
       >
         <FullCalendar
           plugins={[dayGridPlugin]}

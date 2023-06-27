@@ -47,4 +47,17 @@ export const Wrapper = styled.div`
   .evnts:hover {
     color: rgb(251, 149, 200) !important;
   }
+  .calendar {
+    width: 60%;
+    height: 60%;
+  }
+  @media (max-width: 575.98px) {
+    .calendar {
+      width: 100%;
+      height: 100%;
+    }
+    .fc-toolbar-title {
+      margin-left: 1em;
+    }
+  }
 `;

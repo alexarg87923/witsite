@@ -13,7 +13,7 @@ function Hero() {
                   Empowering the Future of Tech: Women and Non-Binary Voices in
                   STEM
                 </h1>
-                <div>
+                <div className="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-center">
                   <a
                     className="btn btn-primary btn-lg px-4 me-sm-3"
                     href="https://sharknet.mdc.edu/organization/witmdc"

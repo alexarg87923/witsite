@@ -6,7 +6,7 @@ function EventBody() {
   return (
     <Wrapper>
       <section className="text-center mt-5">
-        <div className="eventsBanner d-flex text-center">
+        <div className="eventsBanner d-flex text-center mobile-padding">
           <div className="container-fluid my-auto text-center">
             <div className="text-center">
               <h3 id="eventTitle" className="text-white">
@@ -20,7 +20,7 @@ function EventBody() {
               </a>
             </div>
           </div>
-          <div className="container-fluid">
+          <div className="container-fluid d-none d-lg-block">
             <img className="eventsLogo" src={logo} alt="WiT Logo"></img>
           </div>
         </div>

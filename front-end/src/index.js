@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createGlobalStyle } from 'styled-components';
+import { HelmetProvider } from 'react-helmet-async';
 
 import App from './App';
 
@@ -26,7 +27,9 @@ const GlobalStyles = createGlobalStyle`
 
 root.render(
   <React.StrictMode>
-    <GlobalStyles />
-    <App />
+    <HelmetProvider>
+      <GlobalStyles />
+      <App />
+    </HelmetProvider>
   </React.StrictMode>
 );

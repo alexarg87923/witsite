@@ -6,7 +6,7 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 
 import { Wrapper } from './EventStyles';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 import EventBody from '../../components/app/Events/EventBody';
 

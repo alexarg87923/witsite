@@ -7,6 +7,9 @@ import Events from './pages/Events/Events';
 import AddEvents from './pages/AddEvents/AddEvents';
 import Contact from './pages/Contact/Contact';
 import Error from './pages/Error/Error';
+import AdminContact from './pages/AdminPage/AdminContact';
+import AdminEvent from './pages/AdminPage/AdminEvent';
+
 
 import { toast, ToastContainer } from 'react-toastify';
 import './assets/css/toast.css';
@@ -14,6 +17,7 @@ import { CloseButton } from './components/common/Toast/Toast';
 
 import Nav from './components/common/Nav/NavBar';
 import Footer from './components/common/Footer/Footer';
+
 
 function App() {
   return (
@@ -26,6 +30,8 @@ function App() {
           <Route exact path="/events" element={<Events />} />
           <Route exact path="/addevents" element={<AddEvents />} />
           <Route exact path="/contact" element={<Contact />} />
+          <Route exact path="/admin-contact" element={<AdminContact />} />
+          <Route exact path="/admin-event" element={<AdminEvent />} />
           <Route exact path="*" element={<Error />} />
         </Routes>
         <Footer />

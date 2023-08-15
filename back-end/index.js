@@ -1,36 +1,43 @@
 require('dotenv').config()
-const fs = require('fs')
-const express = require('express')
-const sqlite3 = require('sqlite3');
-const cors = require('cors');
 
-const app = express()
+const express = require('express')
 const path = require('path');
 
-const dataBase = new sqlite3.Database(path.join(__dirname, 'eventList.db'));
+const app = express()
 
 const port = 3001
+const ContactRoutes = require('./routes/contact');
+const eventRoutes = require('./routes/events');
 
-app.use(cors());
+// Midleware
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-app.post('/api/v1/addevents', (req, res, next) => {
-  if (req.body.password != process.env.PASSWORD)
-  {
-    res.sendStatus(400);
-    return
-  }
-  dataBase.run('INSERT INTO eventList (title, date) VALUES (?,?)', [req.body.title, req.body.date])
-  res.sendStatus(200);
-})
+// Views
+app.use(express.static(path.join(__dirname, "../front-end", "build")));
+app.use(express.static("public"));
 
-app.get('/api/v1/events', (req, res, next) => {
-  dataBase.all('SELECT title, date FROM EventList', (error, data) => {
-    res.status(200).json(data);
-    return;
-  });
+// Routes
+app.use(ContactRoutes);
+app.use(eventRoutes);
+
+app.post('/api/v1/validate-admin', (req, res) => {
+  const adminPassword = process.env.PASSWORD;
+  if (req.body.password === adminPassword) {
+      return res.sendStatus(200);
+  }
+  return res.status(401).json({ error: 'Incorrect password' });
 });
 
+
+
+app.use((req, res, next) => {
+  res.sendFile(path.join(__dirname, "../front-end", "build", "index.html"));
+});
+
+
+
+// Listening
 app.listen(port, () => {
   console.log(`App listening on port http://localhost:${port}`)
 })

@@ -2,16 +2,18 @@ require('dotenv').config()
 
 const express = require('express')
 const path = require('path');
+const morgan = require('morgan');
 
 const app = express()
 
-const port = 3001
+const port = 3000
 const ContactRoutes = require('./routes/contact');
 const eventRoutes = require('./routes/events');
 
 // Midleware
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use(morgan('dev'));
 
 // Views
 app.use(express.static(path.join(__dirname, "../front-end", "build")));

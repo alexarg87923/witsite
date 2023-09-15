@@ -29,7 +29,7 @@ function Contact() {
     setLoading(true);
   
     axios
-      .post('http://localhost:3001/api/v1/contact', formData)
+      .post('/api/v1/contact', formData)
       .then(response => {
         if (response.status === 200) {
           setMessageSent(true);

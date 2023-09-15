@@ -71,7 +71,7 @@ function Events() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3001/api/v1/events')
+      .get('/api/v1/events')
       .then(response => {
         const modifiedData = response.data.map(listitem => ({
           ...listitem,

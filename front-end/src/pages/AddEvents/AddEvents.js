@@ -13,7 +13,7 @@ export default function AddEvents() {
   const handleSubmit = e => {
     e.preventDefault();
     axios
-      .post('http://localhost:3001/api/v1/addevents', { ...formData, date: startDate })
+      .post('/api/v1/addevents', { ...formData, date: startDate })
       .then(res => {
         if (res.status === 200) {
           toast.success('Operation successful!', {

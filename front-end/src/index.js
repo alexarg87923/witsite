@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client';
 import { createGlobalStyle } from 'styled-components';
 import { HelmetProvider } from 'react-helmet-async';
 
-import App from './App';
+import App from './App.js';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle';
+import 'bootstrap/dist/js/bootstrap.bundle.js';
 import './assets/icons/bootstrap-icons.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

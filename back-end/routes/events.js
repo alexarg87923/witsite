@@ -1,7 +1,7 @@
-const express = require('express');
-const router = express.Router();
+import { Router } from 'express';
+import database from '../database/database.js';
 
-const database = require('../database/database');
+const router = Router();
 
 router.delete('/api/v1/events/:id', (req, res) => {
     database.run('DELETE FROM event_list WHERE id=?', [req.params.id], error => {
@@ -24,12 +24,12 @@ router.put('/api/v1/events/:id', (req, res) => {
 router.post('/api/v1/addevents', (req, res) => {
     if (req.body.password !== process.env.PASSWORD) {
         return res.sendStatus(400);
-    }
+    };
 
     const { title, date } = req.body;
     if (!title || !date) {
         return res.status(400).json({ error: 'Title and date are required.' });
-    }
+    };
 
     database.run(
         'INSERT INTO event_list (title, date) VALUES (?,?)',
@@ -37,10 +37,9 @@ router.post('/api/v1/addevents', (req, res) => {
         function (err) {
         if (err) {
             return res.status(500).json({ error: 'Database error occurred.' });
-        }
+        };
         res.sendStatus(200);
-        }
-    );
+    });
 });
 
 router.get('/api/v1/events', (req, res) => {
@@ -53,4 +52,4 @@ router.get('/api/v1/events', (req, res) => {
 });
   
 
-module.exports = router;
+export default router;

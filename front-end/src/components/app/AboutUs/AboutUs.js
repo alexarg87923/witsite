@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrapper } from './AboutUsStyles';
+import { Wrapper } from './AboutUsStyles.js';
 import img from '../../../assets/images/pillars.png';
 
 function Hero() {

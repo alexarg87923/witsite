@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Wrapper } from './ContactStyles';
 import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
 import axios from 'axios';
 
-function Contact() {
+import { Wrapper } from './ContactStyles.js';
+
+function Contact () {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -129,6 +130,6 @@ function Contact() {
       </Wrapper>
     </>
   );
-}
+};
 
 export default Contact;

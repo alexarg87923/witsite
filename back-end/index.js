@@ -1,45 +1,44 @@
-require('dotenv').config()
 
-const express = require('express')
-const path = require('path');
-const morgan = require('morgan');
+import express, { urlencoded, json } from 'express';
+import path, { join } from 'path';
+import morgan from 'morgan';
+import { fileURLToPath } from 'url';
+import dotenv from 'dotenv';
 
-const app = express()
+import ContactRoutes from './routes/contact.js';
+import eventRoutes from './routes/events.js';
 
-const port = 3000
-const ContactRoutes = require('./routes/contact');
-const eventRoutes = require('./routes/events');
+const app = express();
+dotenv.config();
+const port = 3000;
+const curr_dirr = path.dirname(fileURLToPath(import.meta.url));
 
 // Midleware
-app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
+app.use(urlencoded({ extended: false }));
+app.use(json());
 app.use(morgan('dev'));
 
 // Views
-app.use(express.static(path.join(__dirname, "../front-end", "build")));
-app.use(express.static("public"));
+app.use(express.static(join(curr_dirr, 'build')));
 
 // Routes
 app.use(ContactRoutes);
 app.use(eventRoutes);
 
+// Confirm Admin Pass
 app.post('/api/v1/validate-admin', (req, res) => {
-  const adminPassword = process.env.PASSWORD;
-  if (req.body.password === adminPassword) {
-      return res.sendStatus(200);
-  }
-  return res.status(401).json({ error: 'Incorrect password' });
+    if (req.body.password === process.env.PASSWORD) {
+        return res.sendStatus(200);
+    };
+    return res.status(401).json({ error: 'Incorrect password' });
 });
 
-
-
-app.use((req, res, next) => {
-  res.sendFile(path.join(__dirname, "../front-end", "build", "index.html"));
+// Send every request to index.html
+app.use((req, res) => {
+    res.sendFile(path.join(curr_dirr, "build", "index.html"));
 });
-
-
 
 // Listening
 app.listen(port, () => {
-  console.log(`App listening on port http://localhost:${port}`)
-})
+    console.log(`App listening on port http://localhost:${port}`);
+});

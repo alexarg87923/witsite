@@ -1,22 +1,21 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React from 'react';
 
-import About from './pages/About/About';
-import Landing from './pages/Landing/Landing';
-import Events from './pages/Events/Events';
-import AddEvents from './pages/AddEvents/AddEvents';
-import Contact from './pages/Contact/Contact';
-import Error from './pages/Error/Error';
-import AdminContact from './pages/AdminPage/AdminContact';
-import AdminEvent from './pages/AdminPage/AdminEvent';
-
+import About from './pages/About/About.js';
+import Landing from './pages/Landing/Landing.js';
+import Events from './pages/Events/Events.js';
+import AddEvents from './pages/AddEvents/AddEvents.js';
+import Contact from './pages/Contact/Contact.js';
+import Error from './pages/Error/Error.js';
+import AdminContact from './pages/AdminPage/AdminContact.js';
+import AdminEvent from './pages/AdminPage/AdminEvent.js';
 
 import { toast, ToastContainer } from 'react-toastify';
 import './assets/css/toast.css';
-import { CloseButton } from './components/common/Toast/Toast';
+import { CloseButton } from './components/common/Toast/Toast.js';
 
-import Nav from './components/common/Nav/NavBar';
-import Footer from './components/common/Footer/Footer';
+import Nav from './components/common/Nav/NavBar.js';
+import Footer from './components/common/Footer/Footer.js';
 
 
 function App() {
@@ -43,6 +42,6 @@ function App() {
       />
     </>
   );
-}
+};
 
 export default App;

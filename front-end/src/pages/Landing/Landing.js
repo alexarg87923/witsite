@@ -1,11 +1,11 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-import Hero from '../../components/app/Hero/Hero';
-import Info from '../../components/app/Info/Info';
-import AboutUs from '../../components/app/AboutUs/AboutUs';
+import Hero from '../../components/app/Hero/Hero.js';
+import Info from '../../components/app/Info/Info.js';
+import AboutUs from '../../components/app/AboutUs/AboutUs.js';
 
-function Landing() {
+function Landing () {
   return (
     <>
       <Helmet>
@@ -16,6 +16,6 @@ function Landing() {
       <AboutUs />
     </>
   );
-}
+};
 
 export default Landing;

@@ -1,7 +1,8 @@
 import React from 'react';
-import { Wrapper } from './HeroStyles';
 
-function Hero() {
+import { Wrapper } from './HeroStyles.js';
+
+function Hero () {
   return (
     <Wrapper>
       <header className="masthead">
@@ -31,6 +32,6 @@ function Hero() {
       </header>
     </Wrapper>
   );
-}
+};
 
 export default Hero;

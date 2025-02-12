@@ -1,8 +1,9 @@
 import React from 'react';
-import { Wrapper } from './EventBodyStyles';
 import logo from '../../../assets/logos/witlogowhite.png';
 
-function EventBody() {
+import { Wrapper } from './EventBodyStyles.js';
+
+function EventBody () {
   return (
     <Wrapper>
       <section className="text-center mt-5">
@@ -27,6 +28,6 @@ function EventBody() {
       </section>
     </Wrapper>
   );
-}
+};
 
 export default EventBody;

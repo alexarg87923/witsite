@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { Helmet } from 'react-helmet-async';
 
-function AdminContact() {
+function AdminContact () {
   const [password, setPassword] = useState('');
   const [authenticated, setAuthenticated] = useState(false);
   const [submissions, setSubmissions] = useState([]);
@@ -16,10 +16,10 @@ function AdminContact() {
       if (response.status === 200) {
         setAuthenticated(true);
         fetchSubmissions();
-      }
+      };
     } catch (err) {
       setError('Failed to authenticate');
-    }
+    };
   };
 
   const fetchSubmissions = async () => {
@@ -28,7 +28,7 @@ function AdminContact() {
       setSubmissions(response.data);
     } catch (err) {
       setError('Failed to fetch submissions');
-    }
+    };
   };
 
   if (!authenticated) {
@@ -84,6 +84,6 @@ function AdminContact() {
       </Container>
     </>
   );
-}
+};
 
 export default AdminContact;

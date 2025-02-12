@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrapper } from './InfoStyles';
+import { Wrapper } from './InfoStyles.js';
 
 function Hero() {
   return (

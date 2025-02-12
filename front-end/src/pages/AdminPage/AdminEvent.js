@@ -4,7 +4,7 @@ import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import { Helmet } from 'react-helmet-async';
 
-function AdminEvent() {
+function AdminEvent () {
   const [events, setEvents] = useState([]);
   const [selectedEvent, setSelectedEvent] = useState(null);
   const [showModal, setShowModal] = useState(false);
@@ -26,7 +26,7 @@ function AdminEvent() {
         fetchEvents();
     } else {
       setAuthError('Incorrect password.');
-    }
+    };
   };
 
   const fetchEvents = async () => {
@@ -35,7 +35,7 @@ function AdminEvent() {
       setEvents(response.data);
     } catch (err) {
       console.error('Failed to fetch events:', err);
-    }
+    };
   };
 
   const handleDelete = async (id) => {
@@ -44,7 +44,7 @@ function AdminEvent() {
       fetchEvents();
     } catch (err) {
       console.error('Failed to delete event:', err);
-    }
+    };
   };
 
   const handleEdit = (event) => {
@@ -66,7 +66,7 @@ function AdminEvent() {
       handleModalClose();
     } catch (err) {
       console.error('Failed to update event:', err);
-    }
+    };
   };
 
   if (!isAuthenticated) {
@@ -94,7 +94,7 @@ function AdminEvent() {
         </Row>
       </Container>
     );
-  }
+  };
 
   return (
     <>
@@ -157,6 +157,6 @@ function AdminEvent() {
         </Container>
     </>
   );
-}
+};
 
 export default AdminEvent;

@@ -1,7 +1,8 @@
-const path = require('path');
-const sqlite3 = require('sqlite3');
+import path, { join } from 'path';
+import sqlite3 from 'sqlite3';
+import { fileURLToPath } from 'url';
 
-const dbPath = path.join(__dirname, 'database.db');
+const dbPath = join(path.dirname(fileURLToPath(import.meta.url)), 'database.db');
 const database = new sqlite3.Database(dbPath);
 
 // Function to check if a table exists
@@ -9,10 +10,10 @@ function tableExists(tableName, callback) {
     database.get(`SELECT name FROM sqlite_master WHERE type='table' AND name=?`, [tableName], (err, row) => {
         if (err) {
             throw err;
-        }
+        };
         callback(!!row);
     });
-}
+};
 
 tableExists('event_list', (exists) => {
     if (!exists) {
@@ -28,7 +29,7 @@ tableExists('event_list', (exists) => {
             }
             console.log('event_list table created.');
         });
-    }
+    };
 });
 
 tableExists('contacts', (exists) => {
@@ -47,7 +48,7 @@ tableExists('contacts', (exists) => {
             }
             console.log('contacts table created.');
         });
-    }
+    };
 });
 
-module.exports = database;
+export default database;

@@ -6,7 +6,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 
-export default function AddEvents() {
+function AddEvents () {
   const [startDate, setStartDate] = useState(new Date());
   const [formData, setFormData] = useState({ title: '', password: '' });
 
@@ -92,4 +92,6 @@ export default function AddEvents() {
       </Container>
     </>
   );
-}
+};
+
+export default AddEvents;

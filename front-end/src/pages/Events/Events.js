@@ -2,15 +2,13 @@ import React, { useEffect, useState } from 'react';
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import axios from 'axios';
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import Tooltip from 'react-bootstrap/Tooltip';
-
-import { Wrapper } from './EventStyles';
+import { Tooltip, OverlayTrigger } from 'react-bootstrap';
 import { Helmet } from 'react-helmet-async';
 
-import EventBody from '../../components/app/Events/EventBody';
+import { Wrapper } from './EventStyles.js';
+import EventBody from '../../components/app/Events/EventBody.js';
 
-function Events() {
+function Events () {
   const [events, setEvents] = useState([]);
   const [dynamicWidth, setDynamicWidth] = useState(0);
 
@@ -101,6 +99,6 @@ function Events() {
       </div>
     </Wrapper>
   );
-}
+};
 
 export default Events;

@@ -1,10 +1,11 @@
 import React from 'react';
-import Navbar from 'react-bootstrap/Navbar';
+import { Navbar } from 'react-bootstrap';
 import { Button, Container, Nav } from 'react-bootstrap';
-import { Wrapper } from './NavBarStyles';
 import logo from '../../../assets/logos/witlogo.png';
 
-function NavBar() {
+import { Wrapper } from './NavBarStyles.js';
+
+function NavBar () {
   return (
     <Wrapper>
       <Navbar className="ps-5 border-bottom border-light" expand="lg">
@@ -49,6 +50,6 @@ function NavBar() {
       </Navbar>
     </Wrapper>
   );
-}
+};
 
 export default NavBar;

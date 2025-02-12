@@ -1,8 +1,9 @@
 import React from 'react';
-import { Wrapper } from './FooterStyles';
 import logo from '../../../assets/logos/witlogored.png';
 
-function Footer() {
+import { Wrapper } from './FooterStyles.js';
+
+function Footer () {
   return (
     <Wrapper>
       <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -36,6 +37,6 @@ function Footer() {
       </footer>
     </Wrapper>
   );
-}
+};
 
 export default Footer;

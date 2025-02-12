@@ -1,8 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Wrapper } from './AboutStyles';
 
-function About() {
+import { Wrapper } from './AboutStyles.js';
+
+function About () {
   return (
     <>
       <Helmet>
@@ -27,11 +28,6 @@ function About() {
             <ul className="timeline">
               <li>
                 <div className="timeline-image">
-                  {/* <img
-                    className="rounded-circle img-fluid"
-                    src="assets/img/about/1.jpg"
-                    alt="..."
-                  /> */}
                 </div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
@@ -54,11 +50,6 @@ function About() {
               </li>
               <li className="timeline-inverted">
                 <div className="timeline-image">
-                  {/* <img
-                    className="rounded-circle img-fluid"
-                    src="assets/img/about/2.jpg"
-                    alt="..."
-                  /> */}
                 </div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
@@ -83,11 +74,6 @@ function About() {
               </li>
               <li>
                 <div className="timeline-image">
-                  {/* <img
-                    className="rounded-circle img-fluid"
-                    src="assets/img/about/3.jpg"
-                    alt="..."
-                  /> */}
                 </div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
@@ -109,30 +95,6 @@ function About() {
                   </div>
                 </div>
               </li>
-              {/* <li className="timeline-inverted">
-                <div className="timeline-image">
-                  <img
-                    className="rounded-circle img-fluid"
-                    src="assets/img/about/4.jpg"
-                    alt="..."
-                  />
-                </div>
-                <div className="timeline-panel">
-                  <div className="timeline-heading">
-                    <h4>PRESENT</h4>
-                    <h4 className="subheading">Journey & Evolution</h4>
-                  </div>
-                  <div className="timeline-body">
-                    <p className="text-muted">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Sunt ut voluptatum eius sapiente, totam reiciendis
-                      temporibus qui quibusdam, recusandae sit vero unde, sed,
-                      incidunt et ea quo dolore laudantium consectetur!
-                    </p>
-                  </div>
-                </div>
-              </li> */}
-
               <li className="timeline-inverted">
                 <a href="https://sharknet.mdc.edu/organization/witmdc">
                   <div className="timeline-image">
@@ -152,6 +114,6 @@ function About() {
       </Wrapper>
     </>
   );
-}
+};
 
 export default About;

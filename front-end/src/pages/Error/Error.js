@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { Card, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-export default function Error() {
+function Error () {
   return (
     <>
       <Helmet>
@@ -37,4 +37,6 @@ export default function Error() {
       </Row>
     </>
   );
-}
+};
+
+export default Error;

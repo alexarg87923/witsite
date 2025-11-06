@@ -1,0 +1,44 @@
+# Node modules
+**/node_modules
+node_modules
+
+# Logs
+back-end/logs
+logs
+
+# Database files (will be created/persisted via volumes)
+back-end/database/database.db
+back-end/database/*.db
+
+# Git
+.git
+.gitignore
+
+# Documentation
+*.md
+README*
+
+# Docker files
+docker-compose.yml
+Dockerfile
+.dockerignore
+
+# Scripts (optional - you may want to include these)
+start.sh
+stop.sh
+cleanup.sh
+install-service.sh
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts (already in docker build)
+front-end/build
+

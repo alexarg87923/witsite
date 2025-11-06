@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  witsite:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: witsite
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./back-end/data:/app/data
+      - ./back-end/logs:/app/logs
+    env_file:
+      - ./.env
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+

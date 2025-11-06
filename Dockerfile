@@ -17,8 +17,10 @@ RUN npm install
 
 COPY ./back-end/database/database.js ./database/database.js
 COPY ./back-end/routes/ ./routes/
-COPY ./back-end/.env ./.env
+COPY ./back-end/utils/ ./utils/
 COPY ./back-end/index.js ./index.js
+
+RUN mkdir -p /app/data
 
 COPY --from=builder /app/build ./build
 

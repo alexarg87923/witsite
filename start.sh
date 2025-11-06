@@ -1,3 +1,3 @@
 #!/bin/bash
-docker build -t witsite .
-docker run -d --name witsite -p 3000:3000 witsite
+# Build and start the container with persistent volumes for database and logs
+docker compose up -d --build

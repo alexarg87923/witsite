@@ -1,3 +1,3 @@
 #!/bin/bash
-docker build -t production .
-docker run -p 3000:3000 production
+docker build -t witsite .
+docker run -d --name witsite -p 3000:3000 witsite
